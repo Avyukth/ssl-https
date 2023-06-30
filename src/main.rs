@@ -15,7 +15,7 @@ async fn main() -> std::io::Result<()> {
     env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
 
     let mut builder = SslAcceptor::mozilla_intermediate(SslMethod::tls()).unwrap();
-        builder
+    builder
         .set_private_key(&load_encrypted_private_key())
         .unwrap();
     builder.set_certificate_chain_file("cert.pem").unwrap();
