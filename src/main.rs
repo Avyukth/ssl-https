@@ -33,7 +33,7 @@ async fn main() -> std::io::Result<()> {
 }
 
 async fn index(req: HttpRequest) -> Result<HttpResponse, Error> {
-    // println!("{req:?}");
+    println!("{req:?}");
     Ok(HttpResponse::Ok()
     .content_type("text/plain; charset=utf-8")
     .body("Hello World TO hTTPS!"))
