@@ -30,7 +30,6 @@ A new `key.pem` and `cert.pem` will be saved to the current directory. You will 
 ### Running Server
 
 ```console
-$ cd security/openssl
 $ cargo run # (or `cargo watch -x run`)
 starting HTTPS server at 127.0.0.1:8443
 ```
